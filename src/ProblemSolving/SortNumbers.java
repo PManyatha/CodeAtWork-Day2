@@ -6,16 +6,16 @@ public class SortNumbers {
 
         while (mid <= high) {
             if (nums[mid] == 0) {
-                // Swap to move 0 to the low end
+
                 int temp = nums[low];
                 nums[low] = nums[mid];
                 nums[mid] = temp;
                 low++;
                 mid++;
             } else if (nums[mid] == 1) {
-                mid++; // Just move mid pointer if it's 1
+                mid++;
             } else {
-                // Swap to move 2 to the high end
+
                 int temp = nums[mid];
                 nums[mid] = nums[high];
                 nums[high] = temp;
@@ -34,4 +34,14 @@ public class SortNumbers {
 
     }
 }
+
+/* Test cases
+      Input         Output
+ 1    [0, 0, 0]                  [0, 0, 0]
+ 2    [2, 0, 1]                  [0, 1, 2]
+ 3    [0, 2, 0, 2, 1, 1]         [0, 0, 1, 1, 2, 2]
+ 4    [1, 2, 1, 0, 0, 1, 2, 0]   [0, 0, 0, 1, 1, 1, 2, 2]
+ 5    [0, 1, 2]                  [0, 1, 2]
+ 6   [2, 2, 1, 1, 0, 0]         [0, 0, 1, 1, 2, 2]
+ */
 

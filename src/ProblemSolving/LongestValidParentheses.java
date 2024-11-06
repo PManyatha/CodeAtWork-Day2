@@ -31,3 +31,14 @@ public class LongestValidParentheses {
     }
 }
 
+/* Test cases
+      Input         Output
+ 1   ()(()))          6
+ 2   ()               2
+ 3   ""               0
+ 4   ()()()           6
+ 5   ((((             0
+ 6   ))))             0
+ 7   (()))(()         4
+ 8  ()())()          4
+ */
